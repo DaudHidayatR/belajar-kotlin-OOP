@@ -5,5 +5,13 @@ open class Employee (val name: String){
         println("Hello $name, my name is ${this.name}")
     }
 }
-class Manager(name: String): Employee(name)
-class VicePresident(name: String): Employee(name)
+class Manager(name: String): Employee(name){
+    final override fun sayHello(name: String) {
+        println("Hello $name, my name is Manager ${this.name}")
+    }
+}
+class VicePresident(name: String): Employee(name){
+    override fun sayHello(name: String) {
+        println("Hello $name, my name is Vice President ${this.name}")
+    }
+}
