@@ -9,7 +9,7 @@ class Person {
         println("Hello $name, my name is $firstName")
     }
     fun sayHello(firstName: String, lastName:String ) {
-        println("Hello $firstName, my name is $lastName")
+        println("Hello ${this.firstName}, my name is ${this.lastName}")
     }
     fun getFullName(): String {
         return "$firstName $middleName $lastName"
