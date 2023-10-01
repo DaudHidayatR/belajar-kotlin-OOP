@@ -6,4 +6,5 @@ fun Students?.hello(){
         println("Hello $name, your age is $age")
     }
 }
-
+val Students.upperName: String
+    get() = this.name.toUpperCase()
