@@ -7,4 +7,8 @@ class Company(var name: String, var address: String){
             else -> return false
         }
     }
+
+    override fun hashCode(): Int {
+        return name.hashCode()
+    }
 }
