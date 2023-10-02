@@ -1,7 +1,7 @@
 package data
 
 class Application (val name: String) {
-    object Utilities {
+    companion object {
         val name: String = "My Utilities"
 
         fun toUpper(value: String): String {
